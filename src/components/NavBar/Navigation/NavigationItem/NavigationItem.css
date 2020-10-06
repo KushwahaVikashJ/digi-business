@@ -1,0 +1,39 @@
+.NavigationItem{
+    margin:5px;
+    display:block; 
+    box-sizing: border-box;
+    width:100%;
+
+    /* border-bottom: 1px solid #ccc; */
+}
+
+.NavigationItem a{
+    color:#508386;
+    text-decoration: none;
+    width: 100%;
+    font-size: 20px;
+    font-weight: 500;
+    padding: 5px 0;
+    box-sizing: border-box;
+    display: block; 
+}
+
+
+@media(min-width:500px){
+    .NavigationItem{
+        margin:0;
+        display:flex;
+        flex-basis: column;
+        justify-content: space-between;
+        align-items: center;
+        width: auto;
+        height:100%;
+    }
+    
+    .NavigationItem a{
+        color:#508386;
+        height: 100%;
+        padding: 17px 10px;
+    }
+
+}    

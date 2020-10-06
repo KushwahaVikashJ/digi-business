@@ -1,0 +1,47 @@
+.SideDrawer{
+    width: 240px;
+    max-width: 95%;
+    height: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    background-color: white;
+    z-index: 200;
+    transition: transform .3s ease-out;
+    margin-top: 50px;
+}
+
+.profile{
+    height: 220px;
+    width: 100%;
+    color: white;
+    text-align: center;
+    background-color: #00646b;
+}
+
+
+.profileData{
+    padding-top:80px;
+}
+
+.profileData p{
+    text-align: center;
+    margin: 0;
+}
+
+@media(min-width:500px){
+    .SideDrawer{
+        display: none;
+    }
+}
+
+.profileImage{
+    border-radius: 50%;
+}
+.open{
+    transform: translateX(0);
+}
+
+.close{
+    transform: translateX(-100%);
+}
